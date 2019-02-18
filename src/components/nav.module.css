@@ -1,0 +1,107 @@
+.top_nav {
+  margin-left: 15px;
+}
+.nav_main {
+  display: none;
+}
+.top_nav a {
+  color: #45658f;
+  display: block;
+  font-family: "Denk One", "Helvetica Neue", Arial, Helvetica, Geneva,
+    sans-serif;
+  margin: 10px;
+}
+.top_nav a span {
+  background: #fff;
+
+  display: inline-block;
+  padding: 4px 6px;
+}
+
+.nav_burger {
+  color: #4a4a4a;
+  cursor: pointer;
+  display: block;
+  height: 3.25rem;
+  margin-left: auto;
+  position: relative;
+  width: 3.25rem;
+}
+.nav_burger:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav_burger span {
+  background-color: currentColor;
+
+  display: block;
+
+  height: 1px;
+
+  left: calc(50% - 8px);
+
+  position: absolute;
+
+  transform-origin: center;
+
+  transition-duration: 86ms;
+
+  transition-property: background-color, opacity, -webkit-transform;
+
+  transition-property: background-color, opacity, transform;
+
+  transition-property: background-color, opacity, transform, -webkit-transform;
+
+  transition-timing-function: ease-out;
+
+  width: 16px;
+}
+.nav_burger span:first-child {
+  top: calc(50% - 6px);
+}
+.nav_burger span:nth-child(2) {
+  top: calc(50% - 1px);
+}
+.nav_burger span:nth-child(3) {
+  top: calc(50% + 4px);
+}
+
+@media only screen and (min-width: 600px) {
+  .nav_main {
+    display: flex;
+  }
+  .nav_burger {
+    display: none;
+  }
+  .top_nav a {
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    padding: 0 0 107px;
+    position: relative;
+    width: 135px;
+  }
+  .top_nav a span {
+    bottom: 14px;
+    box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75);
+    left: 0;
+    position: absolute;
+  }
+  .top_nav a.nav_stringthing {
+    background-image: url(../images/nav_stringthing.jpg);
+  }
+  .top_nav a.nav_singthing {
+    background-image: url(../images/nav_singthing.jpg);
+  }
+  .top_nav a.nav_doodlebook {
+    background-image: url(../images/nav_doodlebook.jpg);
+  }
+  .top_nav a.nav_photos {
+    background-image: url(../images/nav_photos.jpg);
+  }
+  .top_nav a.nav_mailart {
+    background-image: url(../images/nav_mailart.jpg);
+  }
+  .top_nav a.nav_phoneart {
+    background-image: url(../images/nav_phoneart.jpg);
+  }
+}

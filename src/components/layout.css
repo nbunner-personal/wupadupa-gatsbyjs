@@ -1,0 +1,270 @@
+/* main styles for www.wupadupa.com */
+/* copyright n.bunner 2011 */
+
+/* @group common and main structure */
+body,
+html,
+ul,
+li,
+dl,
+dt,
+dd,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+ul li {
+  list-style-type: none;
+}
+body {
+  background: #c3d5da;
+  color: #333;
+  font-family: "Trebuchet MS", Verdana, Arial;
+  font-size: 100.1%;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  font-family: "Denk One", "Helvetica Neue", Arial, Helvetica, Geneva,
+    sans-serif;
+  font-weight: normal;
+}
+.main_container {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+  width: 100%;
+}
+.header {
+  background: url(../images/header.jpg) no-repeat 0 0;
+  color: #fff;
+  height: 199px;
+  position: relative;
+  text-align: right;
+}
+main {
+  padding-top: 30px;
+  text-align: left;
+}
+.header_link {
+  height: 90px;
+  left: 18px;
+  position: absolute;
+  top: 50px;
+  width: 175px;
+}
+.header-text {
+  align-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: middle;
+}
+.header-text p {
+  font-size: 1em;
+  /* padding-top: 8px; */
+  text-shadow: 1px 1px 1px #000;
+  width: 40%;
+}
+.header-text p:first-child {
+  padding-top: 0;
+}
+
+h1,
+h2,
+h3,
+h1 {
+  font-size: 1.3em;
+}
+h2 {
+  font-size: 1.1em;
+}
+h3 {
+  font-size: 1.04em;
+  margin-top: 13px;
+}
+p {
+  font-size: 0.9em;
+  line-height: 1.4em;
+  margin: 0 0 15px;
+}
+
+a:link,
+a:visited {
+  color: #2b6485;
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  color: #1c4e6b;
+  text-decoration: underline;
+}
+a:link img,
+a:visited img {
+  border: none;
+}
+
+.header_buttons {
+  position: relative;
+}
+.header_buttons a {
+  display: block;
+  height: 42px;
+  outline: none;
+  position: absolute;
+  top: 7px;
+  width: 147px;
+}
+.header_buttons a.nav_home {
+  left: 10px;
+}
+.header_buttons a.nav_back {
+  left: 246px;
+}
+.header_buttons a.nav_next {
+  left: 512px;
+}
+.header_buttons a.nav_email {
+  left: 741px;
+}
+
+.footer {
+  background: url(../images/footer_doodles.png) no-repeat 100% 0;
+  font-size: 0.8em;
+  margin: 0 20px;
+  padding: 140px 20px 20px 20px;
+  text-align: left;
+}
+.footer_nav {
+  border-top: 1px solid #cacaca;
+  padding: 10px 0 0;
+}
+/* @end */
+
+/* @group Page styles */
+
+/* doodlebook */
+
+.doodle-image {
+  max-width: 400px;
+}
+.doodlebook_cover {
+  background-repeat: no-repeat;
+  background-position: 0 20px;
+  display: block;
+  float: left;
+  font-family: "Courier New", Courier, mono;
+  height: 215px;
+  margin: 20px 15px 20px 0;
+  width: 200px;
+}
+.doodlebook_info {
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  float: right;
+  margin: 20px 0 0;
+  padding: 0 0 180px 0;
+  width: 200px;
+}
+.book1 {
+  background-image: url(..//images/doodlebook/doodlebook-1.jpg);
+}
+.book2 {
+  background-image: url(../images/doodlebook/doodlebook-2.jpg);
+}
+.book3 {
+  background-image: url(../images/doodlebook/doodlebook-3.jpg);
+}
+.book4 {
+  background-image: url(../images/doodlebook/doodlebook-4.jpg);
+}
+.book5 {
+  background-image: url(../images/doodlebook/doodlebook-5.jpg);
+}
+
+.doodle-index {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* artists */
+.artist {
+  border-top: 1px solid #e9ebee;
+  display: flex;
+  overflow: hidden;
+  padding: 30px 0 0;
+}
+.artist_details {
+  padding-right: 30px;
+  width: 55%;
+}
+.artist_details h3 {
+  margin-top: 0;
+}
+.releases {
+}
+p.artist_links {
+  color: #8d9096;
+  font-size: 0.8em;
+}
+
+.news_item {
+  border-bottom: 1px solid #b0b3b8;
+  overflow: hidden;
+  padding: 15px 0;
+}
+.news_item h3 {
+  margin-bottom: 0.5em;
+}
+.news_item li {
+  font-size: 0.9em;
+  padding: 0 0 5px 10px;
+}
+.news_item ul {
+  margin-bottom: 1.2em;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
+}
+
+.navBurger.is-active span:first-child {
+  transform: translateY(5px) rotate(45deg);
+}
+.navBurger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+.navBurger.is-active span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+.navMain.is-active {
+  display: block;
+}
+
+/* @end */

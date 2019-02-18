@@ -162,18 +162,9 @@ a:visited img {
   background-repeat: no-repeat;
   background-position: 0 20px;
   display: block;
-  float: left;
   font-family: "Courier New", Courier, mono;
   height: 215px;
   margin: 20px 15px 20px 0;
-  width: 200px;
-}
-.doodlebook_info {
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  float: right;
-  margin: 20px 0 0;
-  padding: 0 0 180px 0;
   width: 200px;
 }
 .book1 {
